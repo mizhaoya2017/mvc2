@@ -24,6 +24,7 @@ public class UserController extends AbstractController {
         userB.setAge(37);
         userList.add(userA);
         userList.add(userB);
-        return new ModelAndView("userlist", "users", userList);
+        System.out.print("test->");
+        return new ModelAndView("/userlist", "users", userList);
     }
 }
