@@ -1,7 +1,7 @@
 <%@page language="java" pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <h2>This is SpringMVC demo page</h2>
-<c: forEach item="${users}" var="user">
+<c:forEach var="user" items="${users}">
     <c:out value="${user.username}" /><br/>
     <c:out value="${user.age}" /><br/>
-</c: forEach>
+</c:forEach>
